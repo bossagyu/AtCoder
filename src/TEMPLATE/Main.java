@@ -11,9 +11,13 @@ public class Main {
     // 数字を読み込む
     int b = sc.nextInt();
 
-    // 一行にすべて読み込む, その後配列に格納
-    String c = sc.nextLine();
-    String[] array = c.split(" ");
-
+    // 以下のような標準入力を読み込む
+    // 4
+    // 2 4 5 5
+    int n = sc.nextInt();
+    int[] nums = new int[n];
+    for(int i = 0; i < n; i++) {
+      nums[i] = sc.nextInt();
+    }
   }
 }
