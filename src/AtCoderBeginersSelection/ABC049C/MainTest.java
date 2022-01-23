@@ -1,4 +1,4 @@
-package ABC049C;
+package AtCoderBeginersSelection.ABC049C;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

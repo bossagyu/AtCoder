@@ -1,4 +1,4 @@
-package ABC049C;
+package AtCoderBeginersSelection.ABC049C;
 
 import java.util.Scanner;
 
