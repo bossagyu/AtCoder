@@ -5,19 +5,27 @@ import java.util.Scanner;
 public class Main {
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
-    //  文字列を読み込む
-    String a = sc.next();
-
-    // 数字を読み込む
-    int b = sc.nextInt();
-
-    // 以下のような標準入力を読み込む
-    // 4
-    // 2 4 5 5
     int n = sc.nextInt();
-    int[] nums = new int[n];
+    int sum = n * 4 -1;
+    int[] hand = new int[n];
+
     for(int i = 0; i < n; i++) {
-      nums[i] = sc.nextInt();
+      hand[i] = 0;
     }
+
+    int[] cards = new int[sum];
+    for(int i = 0; i < sum; i++) {
+      cards[i] = sc.nextInt();
+      hand[cards[i]-1]++;
+    }
+
+    int ans = 0;
+    for(int i = 0; i < n; i++) {
+      if(hand[i] != 4) {
+        ans = i + 1;
+      }
+    }
+
+    System.out.println(ans);
   }
 }
